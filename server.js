@@ -1,12 +1,12 @@
 const yargs = require("yargs");
-const askNumber = require("./utils/askNumber");
+const game = require('./utils/game')
 
 yargs.command({
   command: "num",
   alias: "n",
   describe: "guess the num game",
   handler: () => {
-    askNumber();
+    game()
   },
 });
 
